@@ -37,9 +37,9 @@ void edgeDetect(int **oData, int **rData, int height, int width) {
                   {-1, 0, 1}};
   
   // Y-direction filter
-  int Fy[3][3] = {{-1, -2, -1}, 
+  int Fy[3][3] = {{ 1,  2,  1}, 
                   { 0,  0,  0},
-                  { 1,  2,  1}};
+                  {-1, -2, -1}};
 
   // TODO: write your code
 }
