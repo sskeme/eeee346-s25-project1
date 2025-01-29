@@ -31,12 +31,12 @@ void medianFilter(int **oData, int **rData, int height, int width) {
 }
 
 void edgeDetect(int **oData, int **rData, int height, int width) {
-  // X-direction kernel
+  // X-direction filter
   int Fx[3][3] = {{-1, 0, 1}, 
                   {-2, 0, 2},
                   {-1, 0, 1}};
   
-  // Y-direction kernel
+  // Y-direction filter
   int Fy[3][3] = {{-1, -2, -1}, 
                   { 0,  0,  0},
                   { 1,  2,  1}};
