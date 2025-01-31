@@ -112,11 +112,11 @@ void printMenu() { //{{{
 } //}}}
 
 void allocateMemory(int height, int width) { //{{{
-  original = new int *[height];
-  modified = new int *[height];
+  original = new int* [height];
+  modified = new int* [height];
   for (int i=0; i<height; i++) {
-    original[i] = new int[width];
-    modified[i] = new int[width];
+    original[i] = new int [width];
+    modified[i] = new int [width];
   }
 } //}}}
 
