@@ -178,12 +178,12 @@ bool saveFile(string modifiedName) { //{{{
 void cleanUp() { //{{{
   cout << "Cleaning up now!\n";
   // Clean-up dynamic allocated memory
-  for (int i = 0; i < height; i++) {
+  for (int i=0; i<height; i++) {
     delete [] original[i];
     delete [] modified[i];
   }
-  delete original;
-  delete modified;
+  delete [] original;
+  delete [] modified;
 
   // Close the opened image
   closePGM();
